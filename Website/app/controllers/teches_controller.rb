@@ -1,5 +1,6 @@
 class TechesController < ApplicationController
   before_action :set_tech, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   # GET /teches
   # GET /teches.json
