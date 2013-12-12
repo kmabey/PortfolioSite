@@ -1,13 +1,10 @@
 Website::Application.routes.draw do
   devise_for :users
   resources :images
-
   resources :teches
-
   resources :projects
-
-  resources :projects, :people
   root :to => "home#index"
+  get 'about', to: "home#about"
 
 
 
