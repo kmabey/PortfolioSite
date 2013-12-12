@@ -16,15 +16,15 @@ class PeopleControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create person" do
+  test "should create people" do
     assert_difference('Person.count') do
-      post :create, person: {  }
+      post :create, people: { bio: @person.bio, name: @person.name }
     end
 
-    assert_redirected_to person_path(assigns(:person))
+    assert_redirected_to person_path(assigns(:people))
   end
 
-  test "should show person" do
+  test "should show people" do
     get :show, id: @person
     assert_response :success
   end
@@ -34,12 +34,12 @@ class PeopleControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update person" do
-    patch :update, id: @person, person: {  }
-    assert_redirected_to person_path(assigns(:person))
+  test "should update people" do
+    patch :update, id: @person, people: { bio: @person.bio, name: @person.name }
+    assert_redirected_to person_path(assigns(:people))
   end
 
-  test "should destroy person" do
+  test "should destroy people" do
     assert_difference('Person.count', -1) do
       delete :destroy, id: @person
     end

@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Website</title>
+  <title>Kylie Mabey</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="background">
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8 well mainContainer">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="imgLeft"></div>
+          </div>
+          <div class="col-md-8 logo">
+            <h1>Kylie Mabey</h1>
+          </div>
+          <div class="col-md-2 pull-right">
+            <div class="imgRight"></div>
+          </div>
+        </div>
+        <div class="row headAndNav">
+          <div class="col-md-12">
+            <ul class="nav nav-pills nav-justified">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+          <%= yield %>
+        <div class="row">
+          <div class="col-md-12">
+            <footer class="pull-right">&copy Kylie Ann Mabey - 2013</footer>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
 </body>
 </html>

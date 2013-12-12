@@ -1,0 +1,58 @@
+html
+{
+    background: #161616;
+    background: -moz-linear-gradient(-45deg, #161616 0%, #441111 40%, #000000 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#161616), color-stop(40%,#441111), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(-45deg, #161616 0%,#441111 40%,#000000 100%);
+    background: -o-linear-gradient(-45deg, #161616 0%,#441111 40%,#000000 100%);
+    background: -ms-linear-gradient(-45deg, #161616 0%,#441111 40%,#000000 100%);
+    background: linear-gradient(135deg, #161616 0%,#441111 40%,#000000 100%);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#000000',GradientType=1 );
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+
+}
+body
+{
+    font-size: 10px;
+    color: white;
+    background: transparent;
+
+}
+h1
+{
+    font-size: 3em;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.background
+{
+    height: 100%;
+    width: 100%;
+}
+.mainContainer
+{
+    margin-top: 10em;
+    margin-bottom: 10em;
+    border: gray .3em solid;
+    border-radius: 5px;
+    min-height: 20em;
+}
+.headAndNav
+{
+    border-bottom: gray .2em solid;
+    margin-bottom: .5em;
+}
+.imgLeft, .imgRight
+{
+    background: url("test.jpg");
+    min-height: 100px;
+    background-repeat: no-repeat;
+}
+.thumbnail
+{
+    padding-bottom: 5rem;
+}
