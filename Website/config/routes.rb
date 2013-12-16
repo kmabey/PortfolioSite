@@ -3,8 +3,11 @@ Website::Application.routes.draw do
   resources :images
   resources :teches
   resources :projects
+  resources :bios
   root :to => "home#index"
   get 'about', to: "home#about"
+  get 'works', to: "home#works"
+  get 'contact', to: "home#contact"
 
 
 

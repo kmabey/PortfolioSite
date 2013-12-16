@@ -14,10 +14,10 @@
       <div class="col-md-8 well mainContainer">
         <div class="row">
           <div class="col-md-2">
-            <div class="imgLeft"></div>
+
           </div>
           <div class="col-md-8 logo">
-            <h1>Kylie Mabey</h1>
+            <a href="/"><h1>Kylie Mabey</h1></a>
           </div>
           <div class="col-md-2 pull-right">
             <div class="imgRight"></div>
@@ -26,9 +26,8 @@
         <div class="row headAndNav">
           <div class="col-md-12">
             <ul class="nav nav-pills nav-justified">
-              <li><a href="/about">About</a></li>
-              <li><a href="#">Works</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/works">Works</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -49,5 +48,17 @@
       <div class="col-md-2"></div>
     </div>
   </div>
+<script>
+    $.ajaxSetup({cache: false});
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        var target = $(e.target).attr("href") // activated tab
+        if ($(target).is(':empty')) {
+            $.ajax({
+                type: "GET"//,
+                //url: "/article/"
+            })
+        }
+    })
+</script>
 </body>
 </html>

@@ -35,8 +35,8 @@ h1
 }
 .mainContainer
 {
-    margin-top: 10em;
-    margin-bottom: 10em;
+    margin-top: 5em;
+    margin-bottom: 5em;
     border: gray .3em solid;
     border-radius: 5px;
     min-height: 20em;
@@ -46,13 +46,30 @@ h1
     border-bottom: gray .2em solid;
     margin-bottom: .5em;
 }
-.imgLeft, .imgRight
+.imgLeft
 {
-    background: url("test.jpg");
-    min-height: 100px;
+    background: url("me.jpg");
+    min-height: 150px;
     background-repeat: no-repeat;
 }
 .thumbnail
 {
     padding-bottom: 5rem;
+}
+.panel-body
+{
+    padding: 2.5em;
+}
+.skillImgs
+{
+    max-width: 200px;
+    max-height: 200px;
+}
+.skillImgsHCJ
+{
+    max-height: 280px;
+}
+li
+{
+    font-size: 1.8em;
 }

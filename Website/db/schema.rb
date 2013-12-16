@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131212154512) do
+ActiveRecord::Schema.define(version: 20131216025253) do
+
+  create_table "bios", force: true do |t|
+    t.text     "about"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "images", force: true do |t|
     t.integer  "project_id"
